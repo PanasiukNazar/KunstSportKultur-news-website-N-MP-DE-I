@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="author" content="Untree.co" />
+        <link rel="shortcut icon" href="favicon.png" />
+
+        <meta name="description" content="" />
+        <meta name="keywords" content="bootstrap, bootstrap4" />
+
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link href="css/tiny-slider.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <title>TradePartnerX</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/intlTelInput.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Start Header/Navigation -->
+        <nav
+            class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark"
+            arial-label="Art, Sports, and Culture News navigation bar"
+            style="border-bottom: 1px solid lightgray"
+        >
+            <div class="container">
+                <a class="navbar-brand" href="index.html"
+                    >KunstSportKultur<span>.</span></a
+                >
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarsArtSportsCulture"
+                    aria-controls="navbarsArtSportsCulture"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarsArtSportsCulture"
+                >
+                    <ul
+                        class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0"
+                    >
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Startseite</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="catalog.html">Katalog</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="about.html">Über uns</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="contact.html">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Header/Navigation -->
+
+        <!-- Start Hero Section -->
+        <div class="hero">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-5">
+                        <div class="intro-excerpt">
+                            <h1>
+                                Mit unserer Unterstützung erhalten Sie 2025:
+                            </h1>
+                            <p>
+                                Entdecken Sie die neuesten Entwicklungen in den
+                                Bereichen Kunst, Sport und Kultur. Bleiben Sie
+                                informiert über innovative Trends, spannende
+                                Ereignisse und kulturelle Höhepunkte. Unser Team
+                                bietet Ihnen die aktuellsten Nachrichten und
+                                tiefgehende Einblicke in diese dynamischen
+                                Themen.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7" id="hero-img-wrap">
+                        <form action="thanks.html" method="GET">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label class="text-black" for="fname"
+                                            >Vorname</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="fname"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label class="text-black" for="phone"
+                                            >Telefon</label
+                                        >
+                                        <input
+                                            required
+                                            style="width: 100% !important"
+                                            type="text"
+                                            inputmode="numeric"
+                                            pattern="^[0-9]+$"
+                                            class="form-control"
+                                            id="phone"
+                                            placeholder="Telefonnummer"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label class="text-black" for="lname"
+                                            >Nachname</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="lname"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label class="text-black" for="topic"
+                                            >Thema</label
+                                        >
+                                        <select
+                                            name="Service-Typ"
+                                            id=""
+                                            required
+                                        >
+                                            <option value="sports">
+                                                Sport
+                                            </option>
+                                            <option value="art">Kunst</option>
+                                            <option value="culture">
+                                                Kultur
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-black" for="email"
+                                    >E-Mail-Adresse</label
+                                >
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    required
+                                />
+                            </div>
+
+                            <div class="form-group mb-4">
+                                <label class="text-black" for="message"
+                                    >Nachricht</label
+                                >
+                                <textarea
+                                    name=""
+                                    class="form-control"
+                                    id="message"
+                                    cols="30"
+                                    rows="5"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <button
+                                type="submit"
+                                id="submit"
+                                class="btn btn-primary-hover-outline"
+                            >
+                                Nachricht senden
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Hero Section -->
+
+        <!-- Start Product Section -->
+        <div class="product-section">
+            <div class="container">
+                <div class="row">
+                    <!-- Start Column 1 -->
+                    <div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+                        <h2 class="mb-4 section-title">
+                            Entdecken Sie unsere neuesten Kunst-, Sport- und
+                            Kulturangebote
+                        </h2>
+                        <p class="mb-4">
+                            Erweitern Sie Ihre Horizonte mit unserem exklusiven
+                            Angebot an Kunst-, Sport- und Kulturdiensten. Egal,
+                            ob Sie ein leidenschaftlicher Kunstliebhaber,
+                            Sportbegeisterter oder Kulturschaffender sind – wir
+                            bieten maßgeschneiderte Lösungen und
+                            Experteneinblicke, die Ihnen helfen, Ihre
+                            Leidenschaft auf die nächste Stufe zu heben.
+                        </p>
+                    </div>
+                    <!-- End Column 1 -->
+
+                    <!-- Start Column 2 -->
+                    <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                        <a class="product-item" href="services.html">
+                            <img
+                                src="images/product-1.png"
+                                class="img-fluid product-thumbnail"
+                            />
+                            <h3 class="product-title">
+                                Fortschrittliche Kunstplattformen und -tools
+                            </h3>
+                            <p class="product-description">
+                                Entdecken Sie innovative Kunstplattformen und
+                                Werkzeuge, die Ihnen helfen, die neuesten Trends
+                                in der Kunstwelt zu verstehen und Ihre
+                                Kreativität zu entfalten.
+                            </p>
+                        </a>
+                    </div>
+                    <!-- End Column 2 -->
+
+                    <!-- Start Column 3 -->
+                    <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                        <a class="product-item" href="services.html">
+                            <img
+                                src="images/product-2.png"
+                                class="img-fluid product-thumbnail"
+                            />
+                            <h3 class="product-title">
+                                Personalisierte Sportberatung
+                            </h3>
+                            <p class="product-description">
+                                Profitieren Sie von individuellen Beratungen im
+                                Sportbereich, um Ihre Leistungsfähigkeit zu
+                                steigern und Ihre sportlichen Ziele zu
+                                erreichen.
+                            </p>
+                        </a>
+                    </div>
+                    <!-- End Column 3 -->
+
+                    <!-- Start Column 4 -->
+                    <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                        <a class="product-item" href="services.html">
+                            <img
+                                src="images/product-3.png"
+                                class="img-fluid product-thumbnail"
+                            />
+                            <h3 class="product-title">
+                                Coaching zur Kulturförderung
+                            </h3>
+                            <p class="product-description">
+                                Lernen Sie, wie Sie Ihr kulturelles Engagement
+                                und Ihre Projekte effektiv fördern können.
+                                Erhalten Sie Coaching zu kulturellen Strategien
+                                und Netzwerkaufbau.
+                            </p>
+                        </a>
+                    </div>
+                    <!-- End Column 4 -->
+                </div>
+            </div>
+        </div>
+        <!-- End Product Section -->
+
+        <!-- Start Testimonial Slider -->
+        <div class="testimonial-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 mx-auto text-center">
+                        <h2 class="section-title">
+                            Aktuelle Nachrichten aus Kunst, Sport und Kultur
+                        </h2>
+                        <p>
+                            Bleiben Sie auf dem Laufenden mit den neuesten
+                            Entwicklungen und Trends in den Bereichen Kunst,
+                            Sport und Kultur. Unsere Nachrichten bieten Ihnen
+                            tiefgehende Einblicke und aktuelle Berichterstattung
+                            über bedeutende Ereignisse, innovative Projekte und
+                            inspirierende Persönlichkeiten, die die Welt der
+                            Kunst und Kultur prägen.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-12">
+                        <div class="testimonial-slider-wrap text-center">
+                            <div id="testimonial-nav">
+                                <span class="prev" data-controls="prev">
+                                    <span class="fa fa-chevron-left"></span>
+                                </span>
+                                <span class="next" data-controls="next">
+                                    <span class="fa fa-chevron-right"></span>
+                                </span>
+                            </div>
+
+                            <div class="testimonial-slider">
+                                <div class="item">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8 mx-auto">
+                                            <div
+                                                class="testimonial-block text-center"
+                                            >
+                                                <div class="author-info">
+                                                    <div>
+                                                        <img
+                                                            src="images/news-1.jpg"
+                                                            class="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <h3
+                                                        class="font-weight-bold mt-4"
+                                                    >
+                                                        Neue Kunst-Ausstellung
+                                                        eröffnet
+                                                    </h3>
+                                                </div>
+                                                <p>
+                                                    Entdecken Sie die neuesten
+                                                    Werke auf der
+                                                    prestigeträchtigen
+                                                    Kunst-Ausstellung in Berlin.
+                                                    Künstler aus aller Welt
+                                                    zeigen ihre innovativen
+                                                    Arbeiten, die die Grenzen
+                                                    der modernen Kunst neu
+                                                    definieren.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END item -->
+
+                                <div class="item">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8 mx-auto">
+                                            <div
+                                                class="testimonial-block text-center"
+                                            >
+                                                <div class="author-info">
+                                                    <div>
+                                                        <img
+                                                            src="images/news-2.jpg"
+                                                            class="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <h3
+                                                        class="font-weight-bold mt-4"
+                                                    >
+                                                        Historischer Sieg im
+                                                        Tennis
+                                                    </h3>
+                                                </div>
+                                                <p>
+                                                    Der Tennissport erlebt einen
+                                                    historischen Moment: Ein
+                                                    junger Spieler aus
+                                                    Österreich hat den Rekord
+                                                    für die meisten
+                                                    Grand-Slam-Titel im
+                                                    Männer-Einzel gebrochen. Ein
+                                                    Durchbruch, der die
+                                                    Tenniswelt erschüttert.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END item -->
+
+                                <div class="item">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8 mx-auto">
+                                            <div
+                                                class="testimonial-block text-center"
+                                            >
+                                                <div class="author-info">
+                                                    <div>
+                                                        <img
+                                                            src="images/news-3.jpg"
+                                                            class="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <h3
+                                                        class="font-weight-bold mt-4"
+                                                    >
+                                                        Kulturelles Festival
+                                                        zieht tausende Besucher
+                                                        an
+                                                    </h3>
+                                                </div>
+                                                <p>
+                                                    Das jährlich stattfindende
+                                                    Kulturfestival in Wien hat
+                                                    in diesem Jahr eine
+                                                    Rekordzahl an Besuchern
+                                                    angezogen. Mit
+                                                    Veranstaltungen, die Musik,
+                                                    Tanz und Kunst vereinen, war
+                                                    das Festival ein voller
+                                                    Erfolg.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END item -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Testimonial Slider -->
+
+        <!-- Start Popular Product -->
+        <div class="popular-product">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                        <div class="product-item-sm d-flex">
+                            <div class="thumbnail">
+                                <img
+                                    src="images/item-1.jpg"
+                                    alt="Image"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div class="pt-3">
+                                <h3>
+                                    Fortschrittliches Risikomanagement-System
+                                </h3>
+                                <p>
+                                    Meistern Sie die Kunst des Risikomanagements
+                                    mit unserem fortschrittlichen System. Lernen
+                                    Sie, wie Sie Ihr Kapital schützen und
+                                    gleichzeitig das Potenzial für Renditen
+                                    maximieren.
+                                </p>
+                                <p><a href="catalog.html">Mehr lesen</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                        <div class="product-item-sm d-flex">
+                            <div class="thumbnail">
+                                <img
+                                    src="images/item-2.jpg"
+                                    alt="Image"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div class="pt-3">
+                                <h3>Individuelle Künstlerberatung</h3>
+                                <p>
+                                    Erhalten Sie persönliche Beratung von
+                                    führenden Kunstexperten, um kreative
+                                    Strategien zu entwickeln und
+                                    Herausforderungen in der Kunstszene zu
+                                    meistern.
+                                </p>
+                                <p><a href="catalog.html">Mehr lesen</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                        <div class="product-item-sm d-flex">
+                            <div class="thumbnail">
+                                <img
+                                    src="images/item-3.jpg"
+                                    alt="Image"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div class="pt-3">
+                                <h3>Umfassende Kunst- und Kulturplattform</h3>
+                                <p>
+                                    Greifen Sie auf eine leistungsstarke und
+                                    benutzerfreundliche Plattform zu, die alle
+                                    notwendigen Werkzeuge bietet, um fundierte
+                                    Entscheidungen in der Kunst- und Kulturszene
+                                    zu treffen.
+                                </p>
+                                <p><a href="catalog.html">Mehr lesen</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Popular Product -->
+
+        <!-- Start Blog Section -->
+        <div class="blog-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h2 class="section-title">
+                            Unsere neuesten Blog-Beiträge
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                        <div class="post-entry">
+                            <a href="catalog.html" class="post-thumbnail">
+                                <img
+                                    src="images/post-1.jpg"
+                                    alt="Image"
+                                    class="img-fluid"
+                                />
+                            </a>
+                            <div class="post-content-entry">
+                                <h3>
+                                    <a href="#">
+                                        Erfolgreiche Partnerschaften in der
+                                        Kunstwelt
+                                    </a>
+                                </h3>
+                                <div class="meta">
+                                    <span
+                                        >von
+                                        <a href="#">Maximilian Müller</a></span
+                                    >
+                                    <span
+                                        >am
+                                        <a href="#">Januar 10, 2024</a></span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                        <div class="post-entry">
+                            <a href="catalog.html" class="post-thumbnail">
+                                <img
+                                    src="images/post-2.jpg"
+                                    alt="Image"
+                                    class="img-fluid"
+                                />
+                            </a>
+                            <div class="post-content-entry">
+                                <h3>
+                                    <a href="#">
+                                        Best Practices für Kunstpartnerschaften
+                                    </a>
+                                </h3>
+                                <div class="meta">
+                                    <span
+                                        >von <a href="#">Lena Schmidt</a></span
+                                    >
+                                    <span
+                                        >am <a href="#">Januar 5, 2024</a></span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                        <div class="post-entry">
+                            <a href="catalog.html" class="post-thumbnail">
+                                <img
+                                    src="images/post-3.jpg"
+                                    alt="Image"
+                                    class="img-fluid"
+                                />
+                            </a>
+                            <div class="post-content-entry">
+                                <h3>
+                                    <a href="#">
+                                        Kunst- und Kulturprojekte erfolgreich
+                                        umsetzen
+                                    </a>
+                                </h3>
+                                <div class="meta">
+                                    <span
+                                        >von
+                                        <a href="#">Johann Fischer</a></span
+                                    >
+                                    <span
+                                        >am
+                                        <a href="#">Februar 1, 2024</a></span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Blog Section -->
+
+        <!-- Start Footer Section -->
+        <footer class="footer-section">
+            <div class="container relative">
+                <div class="row g-5 mb-5">
+                    <div class="col-lg-4">
+                        <div class="mb-4 footer-logo-wrap">
+                            <a href="index.html" class="footer-logo"
+                                >KunstSportKultur<span>.</span></a
+                            >
+                        </div>
+                        <p class="mb-4">
+                            Dein führender Anbieter von Nachrichten aus der Welt
+                            der Kunst, Kultur und Sport. Bleibe informiert über
+                            aktuelle Trends und Ereignisse.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="row links-wrap">
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <ul class="list-unstyled">
+                                    <li><a href="about.html">Über uns</a></li>
+                                    <li>
+                                        <a href="services.html"
+                                            >Unsere Leistungen</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Kontakt</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="terms-of-use.html"
+                                            >Nutzungsbedingungen</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="privacy-policy.html"
+                                            >Datenschutzerklärung</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="disclaimer.html"
+                                            >Haftungsausschluss</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"
+                                            >Brabantstraße 10, 52070 Aachen</a
+                                        >
+                                    </li>
+                                    <li><a href="#">+491705438396</a></li>
+                                    <li>
+                                        <a href="#"
+                                            >kunst_sport_kultur@gmail.com</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5 mb-5">
+                    <div class="col-4 col-sm-4 col-md-4">
+                        <ul class="list-unstyled">
+                            <h3
+                                style="
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    color: #2f2f2f;
+                                "
+                            >
+                                Links
+                            </h3>
+                            <li>
+                                <a href="business-model.html"
+                                    >Kunst- und Kulturmodelle</a
+                                >
+                            </li>
+                            <li>
+                                <a href="cookie-policy.html"
+                                    >Cookie-Richtlinie</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-8 col-sm-8 col-md-8">
+                        <ul class="list-unstyled">
+                            <h3
+                                style="
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    color: #2f2f2f;
+                                "
+                            >
+                                Haftungsausschluss
+                            </h3>
+                            <p>
+                                Bitte beachte, dass die auf dieser Website
+                                bereitgestellten Informationen ausschließlich zu
+                                Informationszwecken dienen und keine spezifische
+                                Beratung in den Bereichen Kunst, Kultur oder
+                                Sport darstellen. Alle Aktivitäten in diesen
+                                Bereichen können Risiken mit sich bringen, und
+                                vergangene Erfolge garantieren keine zukünftigen
+                                Ergebnisse. Es ist wichtig, alle relevanten
+                                Informationen zu berücksichtigen und
+                                gegebenenfalls professionelle Beratung
+                                einzuholen, bevor man sich in diesen Bereichen
+                                engagiert.
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer Section -->
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div class="cookie-header">
+                <i class="bx bx-cookie"></i>
+                <h2>Wir verwenden Cookies</h2>
+            </div>
+
+            <div class="cookie-content">
+                <p>
+                    Um dir ein besseres Nutzererlebnis zu bieten, verwendet
+                    diese Seite Cookies. Wir fokussieren uns auf aktuelle
+                    Nachrichten und Trends aus den Bereichen Kunst, Kultur und
+                    Sport. Deine Zustimmung ermöglicht es uns, deine Vorlieben
+                    besser zu verstehen und die Navigation auf der Seite zu
+                    verbessern.
+                </p>
+                <p>
+                    Weitere Informationen zu den verwendeten Cookies findest du
+                    in unserer
+                    <a href="privacy-policy.html">Datenschutzrichtlinie</a> und
+                    <a href="cookie-policy.html">Cookie-Richtlinie</a>.
+                </p>
+            </div>
+
+            <div class="cookie-buttons">
+                <button class="cookie-button" id="acceptBtn">Zustimmen</button>
+                <button class="cookie-button" id="declineBtn">Ablehnen</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/tiny-slider.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/cookiebanner.js"></script>
+
+        <script>
+            const input = document.querySelector('#phone');
+            window.intlTelInput(input, {
+                loadUtils: () =>
+                    import(
+                        'https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/utils.js'
+                    ),
+            });
+        </script>
+    </body>
+</html>
